@@ -27,7 +27,7 @@ global.appRoot = path.resolve(__dirname);
 
 app.use(express.urlencoded({ extended: false }))
 
-app.use(express.json());
+app.use(express.json()); //Turning on the features to read the json data from postman (req.body sends data in json format)
 
 app.use('/api', routes);
 
